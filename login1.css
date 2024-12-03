@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+    font-family: 'Exo 2', sans-serif;
+    position: relative; /* Ensure the video and content are positioned correctly */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place the video behind the login container */
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the viewport */
+}
+
+/* Styling for the login container */
+.login-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1; /* Ensure it appears above the video */
+    position: relative; /* Position it relative to the body */
+}
+
+/* Heading styling */
+h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #ff7a00;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #e06a00;
+}
+
+/* Paragraph styling */
+p {
+    margin-top: 1.5rem;
+    color: #555;
+}
+
+p a {
+    color: #ff7a00;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-container {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+}

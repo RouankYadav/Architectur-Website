@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+main {
+    flex: 1; /* Make the main content grow to fill the remaining space */
+    padding: 2rem;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.header nav ul li {
+    display: inline;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Styles */
+.delete-btn {
+    background-color: red; /* Red button */
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .list {
+    margin: 1rem 0;
+}
+
+.footer .list a {
+    color: #ff7a00; /* Orange color */
+    text-decoration: none;
+}
+
+.footer .list a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    table th, table td {
+        padding: 0.75rem;
+    }
+}

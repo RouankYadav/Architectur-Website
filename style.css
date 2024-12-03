@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --orange: #ff7a00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-transform: capitalize;
+    font-family: 'Exo 2', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.heading{ 
+    font-size: 4rem;
+    text-align:center;
+    letter-spacing: 1.7rem;
+    color: #444;
+    margin: 2rem 0;
+    padding-top: 6rem;
+    text-decoration: underline;
+    text-decoration-style: solid; 
+    text-decoration-color: var(--orange);
+    text-underline-offset: -1.4rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #ffff;
+    z-index: 100;
+    padding: 1rem 2rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+}
+
+.header .logo img {
+    height: 5rem;
+}
+
+.header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li{
+    margin: 0 1.5rem;
+    height: 80px;
+}
+
+.header nav ul li a{
+    font-size: 2rem;
+    color: #666;
+    align-items: center;
+}
+
+.header nav ul li a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.header .fa-bars{
+    font-size: 2.5rem;
+    color:#666;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    size: 60px;
+    padding: 10px;
+}
+
+.home .hero{
+    min-height: 60vh;
+    background: url(/Sem5-Proj/bg-home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.home .hero .text1{
+    font-size: 5rem;
+    width: 45rem;
+    background: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    opacity: .8;
+}
+
+.home .hero .text2{
+    font-size: 3rem;
+    width: 35rem;
+    background: var(--orange);
+    padding: 1rem 2rem;
+    text-align: center;
+    opacity: .8;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.home .counting{
+    min-height: 40vh;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home .counting .box{
+    margin: 2rem 4rem;
+    text-align: center;
+}
+
+.home .counting .box .count{
+    font-size: 7rem;
+    color: #444;
+}
+
+.home .counting .box h3{
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+.about{
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.about .image img{
+    height: 45rem;
+    object-fit: cover;
+    box-shadow: 2.5rem 2.5rem 0 1rem var(--orange);
+}
+
+.about .info{
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.about .info h2{
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+.about .info p{
+    font-size: 1.4rem;
+    color: #444;
+    margin: 2rem 0;
+}
+
+.about .info .icons a{
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.about .info .icons a:hover{
+    background:var(--orange);
+}
+
+.service{
+    min-height: 100vh;
+} 
+
+.service .box-container{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    height: 25rem;
+    width: 25rem;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,.3);
+    border-left: .5rem solid var(--orange);
+    border-right: .5rem solid var(--orange);
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 5rem;
+    margin: 2rem 3rem;
+}
+
+.service .box-container .box p{
+    color: #333;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
+
+.service .box-container .box .fas{
+color: var(--orange);
+font-size: 5rem;
+}
+
+.project{
+    min-height: 100vh;
+    background: #333;
+}
+
+.project .heading{
+    color: #fff;
+}
+
+.project .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project .box-container .box{
+    height: 20rem;
+    width: 30rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .2rem .5rem #000;
+    overflow: hidden;
+}
+
+.project .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .box-container .box:hover img{
+    transform: scale(1.4);
+}
+
+
+.contact{
+    min-height: 100vh;
+}
+
+.contact-box-container{
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-box-container .contact-box{
+    height: 15rem;
+    flex: 1 0 30rem;
+    margin: 2rem;
+    box-shadow: 0.3rem .5rem rgba(0,0,0,.2);
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.contact-box-container .contact-box i{
+    color: var(--orange);
+    font-size: 4rem;
+}
+
+.contact-box-container .contact-box h3{
+    font-size: 1.8rem;
+    color: #444;
+    margin: 2rem 0;
+}
+
+
+.contact .form-container{
+    width:90%;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact .form-container form input, textarea{
+    height: 4.5rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+.contact .form-container form .inputBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .form-container form input[type="text"]{
+    width: 49%;
+}
+
+.contact .form-container form input[type="email"]{
+    width: 100%;
+}
+
+.contact .form-container form textarea{
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+    overflow-y: auto;
+}
+
+.contact .form-container form input[type="submit"]{
+    background: var(--orange);
+    width: 15rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.contact .form-container form input[type="submit"]:hover{
+    opacity: .8;
+}
+
+
+
+
+.footer{
+    background: #333;
+    text-align: center;
+    padding: 2rem 0; /* Added padding for spacing */
+}
+
+.footer .row{
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+    display: flex; /* Added flex display */
+    flex-wrap: wrap; /* Added wrap to handle responsive layout */
+    justify-content: center; /* Center items horizontally */
+}
+
+.footer .row .col-md-3{
+    margin: 1rem;
+    flex: 1 1 25%; /* Adjust to fit 4 columns on larger screens */
+}
+
+.footer h2{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+.footer p{
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.footer .list{
+   display: flex;
+   flex-flow: column;
+   align-items: center; /* Center items horizontally */
+}
+
+.footer .list a{
+    color: #ccc;
+    font-size: 1.7rem;
+}
+
+.footer .letter p{
+    font-size: 2rem;
+}
+
+.footer .visit-us {
+    margin-top: 2rem; /* Add margin for spacing */
+    padding: 2rem;
+    background: #444; /* Background color for the Visit Us section */
+    border-radius: .5rem; /* Rounded corners */
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3); /* Shadow for better visibility */
+}
+
+.footer .visit-us h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+.footer .visit-us .map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+}
+
+.footer .visit-us .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer .visit-us p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: 1rem; /* Space above paragraph */
+}
+
+.fa-times{
+    transform: rotate(180deg);
+}
+
+/* Responsive styles for Visit Us section */
+@media(max-width: 768px) {
+    .footer .row .col-md-3 {
+        flex: 1 1 50%; /* Adjust to fit 2 columns on medium screens */
+    }
+}
+
+@media(max-width: 480px) {
+    .footer .row .col-md-3 {
+        flex: 1 1 100%; /* Full-width on small screens */
+    }
+}
+
+/* media queries */
+
+@media(max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header .fa-bars{
+        display: block;
+    }
+
+    .header nav.open{
+        right: 0;
+    }
+
+    .header nav{
+        position: fixed;
+        top:6rem; right: -120%;
+        height:calc(100vh - 6rem);
+        width:100vw;
+        background: rgba(0,0,0,.5);
+        z-index: 1000;
+        transition: right 0.3s ease;
+        border-top: .1rem solid rgba(0,0,0,.3);
+    }
+
+    .header nav ul{
+        height: 100%;
+        width:33rem;
+        background:#fff;
+        flex-flow:column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+
+    .header nav ul li{
+        margin:1rem 0;
+    }
+
+    .header nav ul li a{
+        display: block;
+        padding:0.9rem 0;
+        border: 0.1rem solid rgba(0,0,0,.3);
+        width:25rem;
+        border-radius: 5rem;
+        text-align:center;
+    }
+
+    .header nav ul li a:hover{
+        background: #333;
+        color:#fff;
+    }
+
+    .header .nav-toggle{
+        right: 0%;
+    }
+
+    }
+
+    @media(max-width:400px){
+    .home .hero .text1{
+        font-size: 3.5rem;
+        width: 35rem;
+    }   
+    .home .hero .text2{
+        font-size: 2.5rem;
+        width: 33rem;
+    }
+
+    }
+
+/* Booking Section */
+.booking-section {
+    min-height: 80vh; /* Adjust as needed */
+    padding: 4rem 2rem;
+    background-image: url('bdbest3.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.booking-section h2 {
+    font-size: 5rem;
+    color: var(--orange);
+    margin-bottom: 2rem;
+}
+
+
+
+.booking-section form {
+    max-width: 600px;
+    width: 100%;
+    
+
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Center horizontally */
+}
+
+.booking-section .form-label {
+    font-size: 1.6rem;
+    color: #444;
+    margin-bottom: .5rem;
+}
+
+.booking-section .form-control,
+.booking-section .form-select {
+    border-radius: .5rem;
+    box-shadow: 0 .2rem .3rem rgba(0,0,0,.2);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: .75rem 1rem;
+}
+
+.booking-section .form-control:focus,
+.booking-section .form-select:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 .2rem var(--orange);
+}
+
+.booking-section button {
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color .2s ease;
+    align-self: center; /* Center button horizontally */
+}
+
+.booking-section button:hover {
+    background-color: #e66500;
+}
+
+

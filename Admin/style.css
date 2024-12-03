@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.header nav ul li {
+    display: inline;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease; /* Add hover zoom effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 2rem; /* Increase title font size */
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.5rem; /* Increase text size */
+    margin-bottom: 1.5rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #ff7a00; /* Orange color */
+    border: none;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e06a00; /* Darker orange */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .list {
+    margin: 1rem 0;
+}
+
+.footer .list a {
+    color: #ff7a00; /* Orange color */
+    text-decoration: none;
+}
+
+.footer .list a:hover {
+    text-decoration: underline;
+}
+
+.footer input[type=email],
+.footer input[type=submit] {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.footer input[type=email] {
+    width: calc(100% - 2rem); /* Adjust width to fit the footer layout */
+}
+
+.footer input[type=submit] {
+    background-color: #ff7a00; /* Orange color */
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer input[type=submit]:hover {
+    background-color: #e06a00; /* Darker orange */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .footer input[type=email],
+    .footer input[type=submit] {
+        width: 100%;
+    }
+}
